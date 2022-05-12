@@ -1,4 +1,4 @@
-import sys, pygame, time
+import pygame, time
 from Sun import Sun
 from Planet import Planet
 
@@ -16,13 +16,12 @@ def updateObject(object):
 height = 400
 width = 400
 size = [height,width]
-
 centre = (height/2,width/2)
 space = pygame.display.set_mode(size)
 
 mainSun = Sun(50,(200,150,0),centre)
 
-planetA = Planet(20,(100,100,100),mainSun,150)
+planetA = Planet(20,(255,10,50),mainSun,150)
 
 planetB = Planet(5,(100,100,100),planetA,50)
 
